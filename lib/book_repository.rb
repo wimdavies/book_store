@@ -9,8 +9,8 @@ class BookRepository
     # SELECT id, title, author_name FROM books;
     sql = 'SELECT id, title, author_name FROM books;'
     result = DatabaseConnection.exec_params(sql, [])
-    # Returns an array of Book objects.
 
+    # Returns an array of Book objects.
     books = []
 
     result.each do |record|
